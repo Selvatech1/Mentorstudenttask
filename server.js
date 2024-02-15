@@ -18,7 +18,7 @@ app.use('/students', studentRoutes);
 app.use('/assign', assignRoutes); // Add this line
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/mentor-student-assigning', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://selva:Selva@cluster0.pevzx7l.mongodb.net/?retryWrites=true&w=majority', )
   .then(() => {
     console.log('MongoDB connected');
     // Start the server
